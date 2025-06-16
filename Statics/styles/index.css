@@ -1,8 +1,15 @@
 header{
     text-align: center;
 }
+.agregar{
+    
+}
 .articulo
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.068);
@@ -12,12 +19,14 @@ header{
     text-align: center;
 }
 #Articulos{
+    width: 70%;
+    height: fit-content;
     display: flex;
-    flex: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgba(255, 128, 0, 0.812);
-    width: 70%;
-    height: 500px;
+    
 }
 #Carrito{
     display: inline-block;
@@ -38,4 +47,8 @@ header{
     height: 100px;
     object-fit: cover;
     border-radius: 10px;
+    
+}
+body{
+    background-color: rgba(230, 230, 230, 0.904);
 }
