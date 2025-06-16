@@ -9,7 +9,8 @@ let btn6=document.getElementById("art6");
 let btn7=document.getElementById("art7");
 let btn8=document.getElementById("art8");
 let btn9=document.getElementById("art9");
-
+let totalsuma= document.getElementById("total");
+let numArt1, numArt2, numArt3, numArt4, numArt5, numArt6, numArt7, numArt8, numArt9;
 //Poner valores en nuestro carrito
 btn1.addEventListener("click", ()=>{
     let art1 = document.createElement("li");
@@ -19,6 +20,10 @@ btn1.addEventListener("click", ()=>{
     art1.querySelector(".remove-item").addEventListener("click", function() {
         art1.remove();
     });
+    //Actualizar el total
+    total = total + 10;
+    totalsuma.innerHTML = `Total: $${total}`;
+    
 });
 btn2.addEventListener("click", ()=>{
     let art2 = document.createElement("li");
@@ -28,6 +33,7 @@ btn2.addEventListener("click", ()=>{
     art2.querySelector(".remove-item").addEventListener("click", function() {
         art2.remove();
     });
+    total = total + 20;
 });
 btn3.addEventListener("click", ()=>{
     let art3 = document.createElement("li");
@@ -37,6 +43,7 @@ btn3.addEventListener("click", ()=>{
     art3.querySelector(".remove-item").addEventListener("click", function() {
         art3.remove();
     });
+    total = total + 30;
 });
 btn4.addEventListener("click", ()=>{
     let art4 = document.createElement("li");
@@ -46,6 +53,7 @@ btn4.addEventListener("click", ()=>{
     art4.querySelector(".remove-item").addEventListener("click", function() {
         art4.remove();
     });
+    total = total + 40;
 });
 btn5.addEventListener("click", ()=>{
     let art5 = document.createElement("li");
@@ -55,6 +63,7 @@ btn5.addEventListener("click", ()=>{
     art5.querySelector(".remove-item").addEventListener("click", function() {
         art5.remove();
     });
+    total = total + 50;
 });
 btn6.addEventListener("click", ()=>{
     let art6 = document.createElement("li");
@@ -64,6 +73,7 @@ btn6.addEventListener("click", ()=>{
     art6.querySelector(".remove-item").addEventListener("click", function() {
         art6.remove();
     });
+    total = total + 60;
 });
 btn7.addEventListener("click", ()=>{
     let art7 = document.createElement("li");
@@ -73,6 +83,7 @@ btn7.addEventListener("click", ()=>{
     art7.querySelector(".remove-item").addEventListener("click", function() {
         art7.remove();
     });
+    total = total + 70;
 });
 btn8.addEventListener("click", ()=>{
     let art8 = document.createElement("li");
@@ -82,6 +93,7 @@ btn8.addEventListener("click", ()=>{
     art8.querySelector(".remove-item").addEventListener("click", function() {
         art8.remove();
     });
+    total = total + 80;
 });
 btn9.addEventListener("click", ()=>{
     let art9 = document.createElement("li");
@@ -91,6 +103,7 @@ btn9.addEventListener("click", ()=>{
     art9.querySelector(".remove-item").addEventListener("click", function() {
         art9.remove();
     });
+    total = total + 90;
 });
 let btnRemove = document.getElementsByClassName("remove-item");
 //Eliminar un elemento del carrito
